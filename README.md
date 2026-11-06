@@ -24,7 +24,7 @@ The project is organized into:
 
 ## Project features
 
-- Mobile-first implementation at 375px with desktop adaptations from 768px and up.
+- Mobile-first implementation at 375px, with tablet styles from 641px and desktop styles from 901px.
 - Reusable listing card component shared between Home and Catalog.
 - Correct use of `useState` for search, category filtering, sorting, gallery index, and guest counter.
 - Correct use of `useEffect` to simulate async loading in Home and Room Detail.
