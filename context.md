@@ -2,13 +2,27 @@
 
 ## User intent
 
-Help travelers discover distinctive places to stay, narrow options by destination and style, compare nightly prices, and explore a property's photos and booking details. The experience should feel calm, welcoming, photo-led, and usable on mobile as well as desktop.
+The user is a traveler planning a getaway who wants to discover distinctive places to stay, narrow options by destination and style, compare nightly prices, and inspect property photos and booking details before choosing a stay. The platform should make that exploration feel calm, welcoming, photo-led, and easy on both mobile and desktop.
 
 ## Pages and routes
 
-- `/` — Home discovery page with a destination search, category filters, and curated listing cards.
-- `/catalog` — Search results with real-time destination filtering, category filtering, and recommended or ascending/descending price sorting.
-- `/rooms/[id]` — A listing detail page with a photo gallery, host information, capacity and room details, amenities, and an interactive booking card.
+### Home (`/`)
+
+The home view introduces the stay collection with a destination search, category filters, and curated listing cards.
+
+Main components: `HomePage`, `SiteHeader`, `CategoryRail`, `ListingGrid`, `ListingCard` (through the grid), and `ListingSkeleton`.
+
+### Catalog (`/catalog`)
+
+The catalog view shows searchable results with category filtering and recommended, ascending-price, or descending-price sorting.
+
+Main components: `CatalogPage`, `CatalogView`, `SiteHeader`, `CategoryRail`, `ListingGrid`, `ListingCard` (through the grid), and `ListingSkeleton`.
+
+### Room detail (`/rooms/[id]`)
+
+The room view presents a property's photo gallery, host information, guest capacity, sleeping arrangements, amenities, reviews, and interactive booking card.
+
+Main components: `RoomPage`, `RoomDetails`, and its `RoomHeader`.
 
 Use Next.js `Link` for internal navigation. The listing detail route should return a not-found page for an unknown listing id.
 
